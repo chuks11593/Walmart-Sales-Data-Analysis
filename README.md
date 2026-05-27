@@ -56,4 +56,4 @@ To transform this from a static report into an active business discovery tool, I
 ## 🚀 How to View the Project
 * **SQL Scripts:** Check the `/sql` directory for the extraction queries.
 * **Python Notebook:** View `walmart_analysis.ipynb` for the full data cleaning and transformation code.
-* **Interactive Dashboard:** [Link to your Tableau Public Dashboard]
+* **Interactive Dashboard:** https://public.tableau.com/views/walmartanalysistableauoriginal/Dashboard1
