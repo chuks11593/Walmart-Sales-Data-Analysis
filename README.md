@@ -29,7 +29,7 @@ Before diving into heavy cleaning, I utilized SQL queries to aggregate raw trans
 ### Phase 2: Data Auditing & Transformation (Python)
 Using Jupyter Notebook and the Pandas library, I performed data quality checks and engineered new metrics to deepen the analysis:
 * Audited the dataset for missing data, structural anomalies, and incorrect data types.
-* **Feature Engineering:** Programmatically derived a `Total_Cost` field across all 10,000 rows utilizing the standardized profit margins:
+* **Feature Engineering:** Programmatically derived a 'Total_Cost' field across all 10,000 rows utilizing the standardized profit margins:
   $$Total\_Cost = (UnitPrice \times Quantity) \times (1 - ProfitMargin)$$
 * Leveraged vectorised groupings to analyze how payment types (Cash, Credit Card, E-wallet) correlate with average checkout values and customer satisfaction scores.
 
