@@ -12,6 +12,7 @@ GROUP BY
 ORDER BY 
     Total_Revenue DESC;
 
+
 PROMPT 2 (Performance): Find the top 3 best-performing product categories based on total quantity sold.
 SELECT
     category,
@@ -37,4 +38,14 @@ GROUP BY
     Month_Number
 ORDER BY 
     Month_Number ASC;
-         
+
+
+PROMPT 4  (Revenue Diversification): How does cash revenue compare to digital revenue (Credit Card and E-wallet) across our different retail store cities?
+SELECT 
+    city,
+    SUM(CASE WHEN payment_method = 'Cash' THEN CAST(REPLACE(unit_price, '$', '') AS NUMERIC) * quantity ELSE 0 END) AS cash_revenue,
+    SUM(CASE WHEN payment_method IN ('Ewallet', 'Credit card') THEN CAST(REPLACE(unit_price, '$', '') AS NUMERIC) * quantity ELSE 0 END) AS digital_revenue
+FROM
+    walmart
+GROUP BY 
+    city;        
