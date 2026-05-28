@@ -25,6 +25,7 @@ Before diving into heavy cleaning, I utilized SQL queries to aggregate raw trans
 * Calculated total revenue and profitability metrics grouped by individual cities and branches.
 * Isolated the top-performing product categories ranked by total item volume sold.
 * Extracted date parts to evaluate monthly transaction trends and check for potential operational seasonality.
+* Conditional Aggregation: Separates business performance into distinct financial streams (cash_revenue vs. digital_revenue) based on customer payment methods, allowing for immediate regional payment-type analysis.
 
 ### Phase 2: Data Auditing & Transformation (Python)
 Using Jupyter Notebook and the Pandas library, I performed data quality checks and engineered new metrics to deepen the analysis:
